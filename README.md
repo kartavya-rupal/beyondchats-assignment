@@ -95,3 +95,7 @@ These issues are **real-world constraints**, not bugs:
 The pipeline is designed to **fail gracefully** and continue processing wherever possible.
 
 
+---
+
+## Architectural Diagram
+- Eraser.io link : https://app.eraser.io/workspace/TbhUiVVV0zOOI8PxY3PF?origin=share
