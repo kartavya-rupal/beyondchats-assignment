@@ -21,7 +21,7 @@ export default function Home() {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const res = await axios.get<Article[]>("http://localhost:5000/api/articles")
+        const res = await axios.get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/articles`)
         setArticles(res.data)
       } catch (error) {
         console.error("Failed to fetch articles:", error)
