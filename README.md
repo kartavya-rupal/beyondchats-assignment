@@ -99,3 +99,32 @@ The pipeline is designed to **fail gracefully** and continue processing wherever
 
 ## Architectural Diagram
 - Eraser.io link : https://app.eraser.io/workspace/TbhUiVVV0zOOI8PxY3PF?origin=share
+
+---
+
+## Environment Variables
+
+Each major component uses its own environment configuration.
+
+### Backend (`backend/.env`)
+```env
+PORT=5000
+MONGO_URI=<your_mongodb_connection_string>
+```
+
+### Automation (`automation/.env`)
+```env
+GROQ_API_KEY=<your_groq_api_key>
+SERP_API_KEY=<your_serpapi_key>
+```
+
+### Frontend (frontend/.env.local)
+```env
+NEXT_PUBLIC_API_BASE_URL=<backend_deployment_url>
+```
+
+---
+
+## Live Deployment Links
+- Frontend - https://beyondchats-assignment-hazel.vercel.app
+- Backend - https://beyondchats-assignment-evev.onrender.com
